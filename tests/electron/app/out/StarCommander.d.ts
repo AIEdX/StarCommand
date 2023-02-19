@@ -20,6 +20,7 @@ export declare const StarCommander: {
                 size: number;
                 padding: number;
             };
+            startingY: number;
             _bgColor: string;
             $INIT(context: CanvasRenderingContext2D): void;
             _setStyle(): void;
@@ -46,6 +47,7 @@ export declare const StarCommander: {
             history: string[];
             historyIndex: number;
             $INIT(): void;
+            centerAtBottom(): void;
             clearActiveText(): void;
             clearHistory(): void;
             clear(): void;
@@ -55,9 +57,11 @@ export declare const StarCommander: {
             addActiveText(): void;
             moveCursor(direction: "left" | "right" | "up" | "down", scroll?: boolean): void;
             commit(): void;
+            getCursorPosition(ctx: CanvasRenderingContext2D): number;
             getActiveText(cursor?: boolean): string[];
         };
         displayText(text: string): void;
+        error(text: string): void;
         clear(): void;
         exit(): void;
     };

@@ -11,6 +11,7 @@ export declare const Console: {
     history: string[];
     historyIndex: number;
     $INIT(): void;
+    centerAtBottom(): void;
     clearActiveText(): void;
     clearHistory(): void;
     clear(): void;
@@ -20,5 +21,6 @@ export declare const Console: {
     addActiveText(): void;
     moveCursor(direction: "left" | "right" | "up" | "down", scroll?: boolean): void;
     commit(): void;
+    getCursorPosition(ctx: CanvasRenderingContext2D): number;
     getActiveText(cursor?: boolean): string[];
 };

@@ -8,6 +8,7 @@ export declare const Scene: {
         size: number;
         padding: number;
     };
+    startingY: number;
     _bgColor: string;
     $INIT(context: CanvasRenderingContext2D): void;
     _setStyle(): void;

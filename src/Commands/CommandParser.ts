@@ -2,7 +2,7 @@ import type {
  CommandArgTypes,
  CommandArguments,
  CommandNumberArrayArg,
-} from "Meta/Command.types";
+} from "../Meta/Command.types";
 import { Commands } from "./Commands.js";
 
 const GetValue: Record<

@@ -1,4 +1,4 @@
-import type { CommandArguments } from "Meta/Command.types";
+import type { CommandArguments } from "../Meta/Command.types";
 export declare const CommandParser: {
     getCommandId(input: string): {
         id: string;

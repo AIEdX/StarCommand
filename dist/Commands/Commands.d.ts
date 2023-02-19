@@ -1,4 +1,4 @@
-import type { CommandTypes } from "Meta/Command.types";
+import type { CommandTypes } from "../Meta/Command.types";
 export declare const Commands: {
     commands: Map<string, CommandTypes>;
     registerCommand(data: CommandTypes): void;
